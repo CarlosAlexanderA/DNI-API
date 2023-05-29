@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consulta de DNI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Consulta de DNI</h1>
+
+      <form id="dniForm">
+        <label for="dniInput">Ingrese el número de DNI:</label>
+        <input type="text" id="dniInput" required />
+        <button type="submit">Consultar</button>
+      </form>
+
+      <div id="resultContainer">
+        <h2>Datos de la persona</h2>
+        <p id="nombres"></p>
+        <p id="apellidoPaterno"></p>
+        <p id="apellidoMaterno"></p>
+      </div>
+
+      <div id="failContainer" class="error-container">
+        <p id="errorMessage" class="error-message"></p>
+      </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
